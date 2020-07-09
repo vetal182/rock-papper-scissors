@@ -1,0 +1,82 @@
+:root {
+  --text: #fa7d09;
+  --img: #ff4301;
+  --main: #2f2519;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background-color: #fff;
+  background: url('sakura.png') center center / cover no-repeat;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+}
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.text {
+  margin-bottom: 100px;
+}
+.title {
+  color: var(--text);
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 8vw;
+}
+.display {
+  color: var(--main);
+  font-weight: 700;
+  font-size: 12vw;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.choices {
+  color: var(--img);
+  font-size: 60px;
+  background: transparent;
+  border: 3px solid currentColor;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+@media (min-width: 450px) {
+  .title {
+    font-size: 30px;
+  }
+  .display {
+    font-size: 40px;
+  }
+  .choices {
+    font-size: 80px;
+  }
+}
+@media (min-width: 560px) {
+  .buttons {
+    justify-content: center;
+  }
+  .choices {
+    margin: 0 30px;
+    font-size: 100px;
+  }
+  body {
+    padding: 100px;
+  }
+}
